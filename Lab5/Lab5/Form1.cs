@@ -25,7 +25,7 @@ namespace Lab5
         }
 
         const string PROGRAMMER = "Alex Higgins";
-        int Counter = 2;
+        int Counter = 0;
         /* creats random number */
         private int Getrandom(int min, int max)
         {
