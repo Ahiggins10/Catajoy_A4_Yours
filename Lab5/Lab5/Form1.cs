@@ -166,7 +166,7 @@ namespace Lab5
         }
         private void btnAnalyze_Click(object sender, EventArgs e)
         {
-            if (!CheckInput == true)
+            if (!CheckInput() == true)
             {
                 lblResults.Text = "First string = " + txtString1.Text + "\n Characters check= " + txtString1.TextLength + "\n Second string = " + txtString2.TextLength;
             }
