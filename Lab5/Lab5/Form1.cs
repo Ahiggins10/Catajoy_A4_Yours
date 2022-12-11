@@ -30,7 +30,7 @@ namespace Lab5
         private int Getrandom(int min, int max)
         {
             Random rand = new Random();
-            int Password = rand.Next(min, max)
+            int Password = rand.Next(min, max);
             return Password;
         }
 
