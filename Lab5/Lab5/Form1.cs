@@ -25,12 +25,12 @@ namespace Lab5
         }
 
         const string PROGRAMMER = "Alex Higgins";
-        int Counter = 2;
+        int Counter = 0;
         /* creats random number */
         private int Getrandom(int min, int max)
         {
             Random rand = new Random();
-            int Password = rand.Next(min, max)
+            int Password = rand.Next(min, max);
             return Password;
         }
 
@@ -105,7 +105,7 @@ namespace Lab5
             }
             else if(radStats.Checked)
             {
-                grpText.Hide()
+                grpText.Hide();
                 grpStats.Show();
                 ResetTextGrp();
             }
@@ -166,7 +166,7 @@ namespace Lab5
         }
         private void btnAnalyze_Click(object sender, EventArgs e)
         {
-            if (!CheckInput == true)
+            if (!CheckInput() == true)
             {
                 lblResults.Text = "First string = " + txtString1.Text + "\n Characters check= " + txtString1.TextLength + "\n Second string = " + txtString2.TextLength;
             }
