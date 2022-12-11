@@ -105,7 +105,7 @@ namespace Lab5
             }
             else if(radStats.Checked)
             {
-                grpText.Hide()
+                grpText.Hide();
                 grpStats.Show();
                 ResetTextGrp();
             }
